@@ -26,7 +26,7 @@ cmake_policy(SET CMP0017 NEW)
 
 cmake_minimum_required(VERSION 3.1)
 
-set(APP_NAME MyGame)
+set(APP_NAME InvestigateCos)
 project (${APP_NAME})
 
 set(COCOS2D_ROOT ${CMAKE_SOURCE_DIR}/cocos2d)
@@ -141,7 +141,7 @@ include_directories(
 	${COCOS2D_ROOT}/external
 	${COCOS2D_ROOT}/cocos/platform
 	${COCOS2D_ROOT}/cocos/audio/include/
-	Classes
+        Classes
 )
 if ( WINDOWS )
     include_directories(
@@ -157,13 +157,13 @@ endif ()
 set(GAME_SRC
         ${PLATFORM_SPECIFIC_SRC}
         Classes/AppDelegate.cpp
-        Classes/HelloWorldScene.cpp
+        Classes/CosMainScene.cpp
         )
 
 set(GAME_HEADERS
         ${PLATFORM_SPECIFIC_HEADERS}
         Classes/AppDelegate.h
-        Classes/HelloWorldScene.h
+        Classes/CosMainScene.h
         )
 
 # add the executable
